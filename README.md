@@ -1,4 +1,5 @@
 # Data Flow Toggle – Camunda Modeler Plugin
+
 Hide and show data flows in BPMN diagrams with a single button.
 
 The button sits in the bottom-left corner of the diagram and toggles:
@@ -6,6 +7,9 @@ The button sits in the bottom-left corner of the diagram and toggles:
 - data associations (input and output)
 - data objects
 - data stores
+- text annotations attached to any of these
+
+When you add a new data element while data flows are hidden, they are shown again automatically, so you can see what you just created.
 
 Your BPMN file is not changed. The plugin only changes what you see.
 
@@ -32,7 +36,7 @@ Your BPMN file is not changed. The plugin only changes what you see.
 
 ## How it works
 
-Each data element gets a CSS class once, when it is added to the diagram. The button only toggles one class on the canvas, and CSS does the hiding. Toggling never loops over the diagram elements, so it stays fast even on large diagrams.
+Each data element gets a CSS class when it is added to the diagram, and the class is only refreshed for elements an edit actually changed. The button only toggles one class on the canvas, and CSS does the hiding. Toggling never loops over the diagram elements, so it stays fast even on large diagrams.
 
 ## Customization
 
