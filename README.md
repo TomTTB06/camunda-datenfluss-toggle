@@ -1,3 +1,4 @@
+# Data Flow Toggle – Camunda Modeler Plugin
 Hide and show data flows in BPMN diagrams with a single button.
 
 The button sits in the bottom-left corner of the diagram and toggles:
